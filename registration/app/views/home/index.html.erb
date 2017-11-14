@@ -1,125 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-	<title>WEB Engineering Conference</title>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  </head>
-
-  <body id="homepage_body">
-    <div id="container">
-      <div id="body_space">
-        <div id="header">
-		  <div id="logo-block">
-		    <!-- type your logo and small slogan here -->
-            <p id="logo">ICWE<span class="logoblue">2017</span></p>
-		    <p id="slogan">International Conference on Web Engineering</p>
-			<!-- end logo and small slogan -->
-		  </div>
-		  <div id="definels">
-		    <!-- login -->
-		    <div id="login_top">
-			  <p>login:&nbsp;&nbsp;</p>
-			    <form name="login" method="get" action="" target="_parent">
-                <input name="name" type="text" value="username" class="topinputstyle" />
-			    <p>&nbsp;&nbsp;</p>
-		        <div class="formspace"><input name="email" type="text" value="password" class="topinputstyle" /></div>
-			    <p>&nbsp;&nbsp;</p>
-		        <div class="formspace"><input type="submit" value="" class="loginbutton" /></div>
-		      </form>
-			</div>
-			<!-- end login -->
-			<!-- search -->
-			<div id="search">
-			  <form name="search" method="get" action="" target="_parent">
-                <input type="text" class="box" />
-                <button class="btn" title="Submit Search">Search</button>
-              </form>
-            </div>
-		    <!-- end search -->
-		  </div>
-		  <div class="cls"></div>
-  		  <div id="top-nav-bg">
-            <div id="top-nav">
-			  <!-- start top navigation bar -->
-              <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="speakers.html">Call for Papers</a></li>
-                <li><a href="http://www.webaddresshere.com">Program</a></li>
-                <li><a href="http://www.webaddresshere.com">Proceedings</a></li>
-                <li><%= link_to "Registration", new_user_path %></li>
-		<li><a href="http://www.webaddresshere.com">Hotel</a></li>
-                <li><a style="background-image: none;" href="http://www.webaddresshere.com">Contact</a></li>
-              </ul>
-			  <!-- end top navigation bar -->
-            </div>
-	      </div>
-	    </div>
-	    <div id="clouds">
-		  <!-- large slogan here -->
-   	      <div id="clouds-slogan1"><p>International Conferece on Web Engineering</p></div>
-	        <!-- <div id="clouds-slogan2"><p>International Conferece on Web Engineering</p></div>
-		  <!-- end large slogan -->
-	    </div>
-	  </div>
-	</div>
-	<div id="page">
-	  <div id="page-padding">
-        <!-- start content -->
-	    <div id="content">
-	      <div id="content-padding">
-            <h1>About</h1>
-            <p class="grey">The International Conference on Web Engineering (ICWE), is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. ICWE is supported by the International Society for the Web Engineering (ISWE), and brings together researchers and practitioners from various disciplines in academia and industry to tackle the emerging challenges in the engineering of Web applications and in the problems of its associated technologies, as well as the impact of those technologies on society and culture.
+<% provide(:title, "Home") %>
+<div id="content">
+  <div id="content-padding">
+      <h1>About</h1>
+      <p class="grey">The International Conference on Web Engineering (ICWE), is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. ICWE is supported by the International Society for the Web Engineering (ISWE), and brings together researchers and practitioners from various disciplines in academia and industry to tackle the emerging challenges in the engineering of Web applications and in the problems of its associated technologies, as well as the impact of those technologies on society and culture.
 ICWE 2017 will be held on June 5-8, 2017, in Rome, Italy. It is the 17th edition of the conference.</p>
-			<br />
-            <h1>SCOPE</h1>
-            <p class="grey"> ICWE aims to bring together researchers and practitioners from various disciplines in academia and industry to tackle the emerging challenges in the engineering of Web applications and in the problems of its associated technologies, as well as the impact of those technologies on society, media and culture. The conference will be held at the Department of Engineering of Roma Tre University in Rome, Italy. Rome is the capital of Italy and it is the country's largest and most populated comune and fourth-most populous city in the European Union by population within city limits. It is one of the most important hubs in Italy and host to several leading universities. The 17th edition of ICWE will accept contributions related to different dimensions of Web applications
-	    </p>
+<br />
+      <h1>SCOPE</h1>
+      <p class="grey"> ICWE aims to bring together researchers and practitioners from various disciplines in academia and industry to tackle the emerging challenges in the engineering of Web applications and in the problems of its associated technologies, as well as the impact of those technologies on society, media and culture. The conference will be held at the Department of Engineering of Roma Tre University in Rome, Italy. Rome is the capital of Italy and it is the country's largest and most populated comune and fourth-most populous city in the European Union by population within city limits. It is one of the most important hubs in Italy and host to several leading universities. The 17th edition of ICWE will accept contributions related to different dimensions of Web applications
+</p>
 
-		  </div>
-		</div>
-		<!-- end content -->
-	    <div id="right-nav">
-		  <!-- right side menu, copy and paste what is contained between these start and end comment tags to make an extra menu -->
-          <div class="right-nav-back">
-		    <div class="right-nav-top"><p>. : Our Services</p></div>
-	        <ul>
-			  <li><a href="http://www.webaddresshere.com">Call for Papers</a></li>
-			  <li><a href="http://www.webaddresshere.com">Programs</a></li>
-			  <li><a href="http://www.webaddresshere.com">Registration</a></li>
-			  <li><a href="http://www.webaddresshere.com">Hotel</a></li>
-			</ul>
-			<br /><br /><br />
-		    <div class="right-nav-bottom"></div>
-		  </div>
-		  <!-- end right side menu -->
-		  <!-- start second menu for the newletter -->
-          <div class="right-nav-back">
-		    <div class="right-nav-top"><p>. : Subscribe to our Newsletter</p></div>
-		      <br />
-			  <div id="subscribe">
-                <form action="yourformmailhere" enctype="multipart/form-data" method="post">
-                  <input type="hidden" name="sendtoemail" value="youremailaddress" />
-                  <input type="hidden" name="redirect" value="yourwebsiteaddress" />
-                  <input type="hidden" name="subject" value="Newsletter subscription from your website" />
-                  <input name="name" type="text" value="Your name" class="inputstyle" />
-		          <input name="email" type="text" value="Your email address" class="inputstyle" />
-		          <input type="submit" value="subscribe" class="button" />
-		        </form>
-		      </div>
-		    <div class="right-nav-bottom"></div>
-		  </div>
-		  <!-- end second right side menu, newletter -->
-		  <br /><br /><br /><br /><br /><br />
-	    </div>
-	  </div>
-	  <div id="footer">
-	    <div id="footer-pad">
-	      <div class="line"></div>
-		  <!-- footer and copyright notice -->
-	      <p>This site is &copy; Copyright website name 2011, All rights reserved.  Design by <a href="http://www.steves-templates.com">Steve's free website templates</a>.</p>
-		  <!-- end footer and copyright notice -->
-	    </div>
-	  </div>
-	</div>
-  </body>
-</html>
+</div>
+</div>
